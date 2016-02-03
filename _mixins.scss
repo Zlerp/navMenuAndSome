@@ -71,6 +71,28 @@ $reddit: #ff4500;
 }
 
 
+
+@mixin bShadow {
+	-moz-box-shadow:0px 2px 2px rgba(0,0,0,0.4);
+	-webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.4);
+	box-shadow:0px 2px 5px rgba(0,0,0,0.4);
+}
+@mixin tShadow {
+	-moz-text-shadow:0px 2px 2px rgba(0,0,0,0.4);
+	-webkit-text-shadow:0px 2px 2px rgba(0,0,0,0.4);
+	text-shadow:0px 2px 5px rgba(0,0,0,0.4);
+}
+
+@mixin bg{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
 // @mixin roatition($xOrigin, $yOrigin){
 //     animation-name: rotator;
 //     animation-duration: $speed / 1 ;

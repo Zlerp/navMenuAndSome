@@ -11,8 +11,12 @@ $logoColor3: hsla(25, 98%, 43%, 1);
 $hoverColors: hsla(181, 91%, 49%, 1);
 $color2: hsla(6, 91%, 45%, 1);
 
-#menu {position: fixed;
+#menu {
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
   width: 100%;
+  height: 65px;
+  @include bShadow;
   ul {
     display: table;
     width: 100%;
@@ -34,6 +38,7 @@ $color2: hsla(6, 91%, 45%, 1);
         height: 100%;
         color: rgba(255, 255, 255, 0.94);
         @include animate(.2);
+        @include tShadow;
       }
       a:hover, a:active {
         color: $hoverColors;
@@ -57,9 +62,10 @@ $color2: hsla(6, 91%, 45%, 1);
 
 
 #overLogo {
-  height: 70px;
+  position: relative;
+  height: 50px;
   width: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   overflow: visible;
   g path {
         stroke-width: 5;
@@ -117,9 +123,13 @@ $color2: hsla(6, 91%, 45%, 1);
   position: fixed;
   height: 100%;
   background-color: #fff;
-  width: 300px;
+  width: 270px;
   margin-left: -300px;
   z-index: 20;
+  -moz-box-shadow:3px 0px 5px rgba(0,0,0,0.4);
+  -webkit-box-shadow:3px 0px 5px rgba(0,0,0,0.4);
+  box-shadow:3px 0px 5px rgba(0,0,0,0.4);
+  border-right: 1px solid #000;
 
   ul{
     width: 100%;
@@ -154,12 +164,15 @@ $color2: hsla(6, 91%, 45%, 1);
     li:nth-last-child(2){
       a{
         border-bottom: 2px solid #000;
+
       }
     }
 
     li.social-menu {
       border-collapse: collapse;
       border-bottom: 2px solid #000;
+      border-right: 1px solid #000;
+
       a {
         border: none;
 
@@ -202,12 +215,13 @@ $color2: hsla(6, 91%, 45%, 1);
   text-align: right;
   display: none;
   z-index: 15;
+  background-color: rgba(0, 0, 0, 0.8);
   svg {
     padding-right: 20px;
     stroke-width: 20px;
     stroke: white;
     width: 60px;
-    height: 80px;
+    height: 50px;
     margin: auto;
     position: relative;
     padding-top: 10px;

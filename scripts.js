@@ -26,16 +26,6 @@ $(document).ready(function() {
       });
   });
 
-  // $('.overlay').click(function(event) {
-  //     console.log("overlay clicked while click state equals " + clickState);
-  //     advanceToNextClickState();
-  //     $('#slideMenu').animate(cssForState[clickState]);
-  //     $('#hamburger').toggleClass('toggleAnimation normal');
-  //     $('#h-mid').fadeToggle('100');
-  //     $('.overlay').fadeToggle('100', function() {
-  //     });
-  // });
-
 
   $("i").mouseover(function(){
     $( ".fa" ).not(this).each(function() {
@@ -47,22 +37,11 @@ $(document).ready(function() {
     });
   });
 
-//   $('.fa').hover(function(){
-//      $(this).removeClass('fade').siblings().addClass('fade');
-// },function(){
-//      $(this).siblings().andSelf().removeClass('fade');
-// });
 
-    var canSee = true;
-
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 100 && canSee) {
-        $("#menu").animate({'background-color':"rgba(0, 0, 0, 0.85)"});
-        canSee = false;
-      } else if ($(this).scrollTop() <= 100 && !canSee) {
-        $("#menu").animate({'background-color':"rgba(0, 0, 0, 0)"});
-        canSee = true;
-      }
-    });
+    // $(window).scroll(function() {
+    //  if($(window).scrollTop() + $(window).height() > $(document).height()-100) {
+    //          $('#menu').animate({'backgroundColor': 'black'}, 1000);
+    //    }
+    // });
 
 });
