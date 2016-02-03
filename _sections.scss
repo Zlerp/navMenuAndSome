@@ -1,0 +1,45 @@
+.section {
+  height: auto;
+  min-height: 100vh;
+  min-width: 100vw;
+  // position: relative
+}
+
+.lander{
+  background-color: $color2;
+  color: black;
+  @include tShadow;
+}
+
+.aboutMe{
+  background-color: white;
+  color: black;
+  @include tShadow;
+
+}
+
+
+
+.myWork {
+  background-color: $color2;
+  color: white;
+  @include tShadow;
+
+}
+
+.contactMe {
+  background-color: white;
+  color: black;
+  @include tShadow;
+}
+
+
+.titleContainer{
+  margin: 0 auto;
+  height: 100px;
+  width: 300px;
+  padding-top: 200px;
+  text-align: center;
+  font-size: 50px;
+  @include tShadow;
+}

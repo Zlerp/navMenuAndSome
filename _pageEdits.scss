@@ -1,0 +1,17 @@
+.test{
+  text-align: center;
+  height: 200px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.test:nth-child(even){
+  background-color: $vine;
+}
+.test:nth-child(odd){
+  background-color: $twitter;
+}
+
+.containText {
+  @include vertical-align;
+}
