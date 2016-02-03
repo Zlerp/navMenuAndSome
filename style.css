@@ -113,7 +113,7 @@ body {
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
   #overLogo .st1 {
-    fill: #db1f0a;
+    fill: rgba(219, 31, 10, 0.8);
     -moz-transform: translate(20px, 220px) rotate(-90deg);
     -o-transform: translate(20px, 220px) rotate(-90deg);
     -ms-transform: translate(20px, 220px) rotate(-90deg);
@@ -124,7 +124,7 @@ body {
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
   #overLogo .st2 {
-    fill: #db1f0a;
+    fill: rgba(219, 31, 10, 0.8);
     -moz-transform: translate(470px, -80px) rotate(90deg);
     -o-transform: translate(470px, -80px) rotate(90deg);
     -ms-transform: translate(470px, -80px) rotate(90deg);
@@ -195,7 +195,7 @@ body {
         border-collapse: collapse;
         border: 1px solid black; }
     #slideMenu ul li:not(:first-child):not(:last-child) a:active, #slideMenu ul li:not(:first-child):not(:last-child) a:hover {
-      background-color: #db1f0a;
+      background-color: rgba(219, 31, 10, 0.8);
       color: #0bebef; }
     #slideMenu ul li:nth-last-child(2) a {
       border-bottom: 2px solid #000; }
@@ -366,5 +366,9 @@ body {
 .section {
   height: 100vh;
   width: 100vw; }
+
+.myWork {
+  background-color: rgba(219, 31, 10, 0.8);
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
