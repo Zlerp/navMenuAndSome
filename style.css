@@ -241,8 +241,6 @@ body {
           -moz-transition: 0.2s ease-in-out;
           -o-transition: 0.2s ease-in-out;
           transition: 0.2s ease-in-out; }
-        #slideMenu ul li.social-menu a i:not(.fa-2x):hover {
-          opacity: 0.4; }
 
 .toggleMenu {
   position: fixed;

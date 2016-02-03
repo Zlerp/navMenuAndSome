@@ -199,10 +199,6 @@ $menuBackground: rgba(0, 0, 0, .5);
           color: $reddit;
           @include animate(0.2);
         }
-
-        i:not(.fa-2x):hover {
-          opacity: 0.4;
-        }
       }
     }
   }
