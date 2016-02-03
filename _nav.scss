@@ -1,0 +1,285 @@
+body{
+
+  @include lato;
+}
+
+
+
+$logoColor1: hsla(181, 91%, 49%, 1);
+$logoColor2: hsla(6, 91%, 45%, 1);
+$logoColor3: hsla(25, 98%, 43%, 1);
+$hoverColors: hsla(181, 91%, 49%, 1);
+$color2: hsla(6, 91%, 45%, 1);
+
+#menu {position: fixed;
+  width: 100%;
+  ul {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    height: 55px;
+
+
+    li {
+      display: table-cell;
+      text-align: center;
+      box-sizing: border-box;
+      height: 100%;
+      vertical-align: middle;
+      position: relative;
+
+      a{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: rgba(255, 255, 255, 0.94);
+        @include animate(.2);
+      }
+      a:hover, a:active {
+        color: $hoverColors;
+      }
+    }
+      li.navSpace {
+        width: 40%
+      }
+  }
+}
+
+
+.hidden {
+  display: none;
+}
+
+
+
+
+// ------ ANIMATIONS ------ //
+
+
+#overLogo {
+  height: 70px;
+  width: auto;
+  margin-top: 20px;
+  overflow: visible;
+  g path {
+        stroke-width: 5;
+        stroke: black;
+      }
+
+    .st0 {
+      fill: $logoColor1;
+      @include translateRotate(-70px, 120px, -37);
+      @include animate(.3);
+    }
+
+    .st1 {
+      fill: $logoColor2;
+      @include translateRotate(20px, 220px, -90);
+      @include animate(.3);
+    }
+
+    .st2 {
+      // stroke: teal;
+      fill: $logoColor2;
+      @include translateRotate(470px, -80px, 90);
+      @include animate(.3);
+    }
+
+    .st3 {
+      // stroke: violet;
+      fill: $logoColor1;
+      @include translateRotate(80px, 70px, 90);
+      @include animate(.3);
+    }
+    .st4 {
+      fill:  $logoColor1;
+      @include translateRotate(560px, -20px, 90);
+      @include animate(.3);
+    }
+}
+#overLogo:hover{
+  .st1, .st2, .st3, .st4, .st0 {
+    @include translateRotate(0px, 0px, 0);
+  }
+  .st1{
+
+  }
+}
+#overLogo:active {
+
+}
+
+
+
+#slideMenu {
+  opacity: .95;
+  display: none;
+  position: fixed;
+  height: 100%;
+  background-color: #fff;
+  width: 300px;
+  margin-left: -300px;
+  z-index: 20;
+
+  ul{
+    width: 100%;
+    border-collapse: collapse;
+    li.slideLogo {
+      height: 110px;
+    }
+    li {
+        display: table;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        position: relative;
+      a{
+        color: black;
+        display: table-cell;
+        vertical-align: middle;
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+
+
+    }
+
+    li:not(:first-child):not(:last-child) {
+      a:active, a:hover{
+        background-color: $color2;
+        color: $hoverColors;
+      }
+    }
+
+    li:nth-last-child(2){
+      a{
+        border-bottom: 2px solid #000;
+      }
+    }
+
+    li.social-menu {
+      border-collapse: collapse;
+      border-bottom: 2px solid #000;
+      a {
+        border: none;
+
+        i.tw {
+          color: $twitter;
+          @include animate(0.2);
+        }
+        i.ig {
+          color: $instagram;
+          @include animate(0.2);
+        }
+        i.fb {
+          color: $facebook;
+          @include animate(0.2);
+        }
+        i.gh {
+          color: $github;
+          @include animate(0.2);
+        }
+        i.li {
+          color: $linkedin;
+          @include animate(0.2);
+        }
+        i.ri {
+          color: $reddit;
+          @include animate(0.2);
+        }
+
+        i:not(.fa-2x):hover {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+}
+.toggleMenu{
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  text-align: right;
+  display: none;
+  z-index: 15;
+  svg {
+    padding-right: 20px;
+    stroke-width: 20px;
+    stroke: white;
+    width: 60px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+    padding-top: 10px;
+    cursor: pointer;
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: .7;
+  z-index: 5;
+  display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #menu{
+    display: none;
+  }
+
+  .toggleMenu{
+    display: block;
+    overflow: visible;
+  }
+  #slideMenu {
+    display: block;
+  }
+
+  #overLogo {
+    margin-top: 10px;
+    @include animate(0.1);
+    path.st1, .st2, .st3, .st4, .st0 {
+      @include translateRotate(0px, 0px, 0);
+    }
+  }
+  #overLogo:hover{
+    transform: scale(1.2);
+  }
+}
+
+
+.fade {
+  opacity: .4;
+}
+
+// icon SVG animations
+
+
+.toggleAnimation{
+  #h-top{
+    @include translateRotate(200px, -20px, 45);
+    @include animate(0.4);
+    stroke: $hoverColors
+  }
+  #h-bot{
+    @include translateRotate(-150px, 190px, -45);
+    @include animate(0.4);
+    stroke: $hoverColors
+  }
+}
+.normal{
+  #h-top{
+    @include translateRotate(0px, 0px, 0);
+    @include animate(0.4);
+  }
+  #h-bot{
+    @include translateRotate(0px, 0px, 0);
+    @include animate(0.4);
+
+  }
+}

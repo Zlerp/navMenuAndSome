@@ -1,0 +1,82 @@
+// colors
+
+$twitter: #00aced;
+$facebook: #3b5998;
+$youtube: #bb0000;
+$vine:  #00bf8f;
+$instagram: #517fa4;
+$vimeo: #aad450;
+$linkedin: #007bb6;
+$github: #811c81;
+$reddit: #ff4500;
+
+
+
+
+// fonts:
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900,700,400italic,300,100|Pacifico);
+@mixin pacifico {
+	font-family: 'Pacifico', cursive;
+}
+@mixin lato {
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+// generic transform
+@mixin transform($transforms) {
+	   -moz-transform: $transforms;
+	     -o-transform: $transforms;
+	    -ms-transform: $transforms;
+	-webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+@mixin animate ($time){
+	-webkit-transition: #{$time}s ease-in-out;
+	-moz-transition: #{$time}s ease-in-out;
+	-o-transition: #{$time}s ease-in-out;
+	transition: #{$time}s ease-in-out;
+}
+
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+	 @include transform(scale($scale));
+}
+// translate
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+// translate rotate
+@mixin translateRotate ($x, $y, $deg) {
+   @include transform(translate($x, $y) rotate(#{$deg}deg));
+}
+// skew
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+    moz-transform-origin: $origin;
+	     -o-transform-origin: $origin;
+	    -ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+
+// @mixin roatition($xOrigin, $yOrigin){
+//     animation-name: rotator;
+//     animation-duration: $speed / 1 ;
+//     animation-iteration-count: infinite;
+//     transform-origin: $xOrigin $yOrigin;
+//     display: inline-block;
+//     animation-delay: $speed / 1.4;
+//     animation-timing-function: linear;
+// }

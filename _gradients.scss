@@ -1,0 +1,66 @@
+@mixin g1 {
+	background:
+	-webkit-linear-gradient(45deg, hsla(175, 93%, 46%, 1) 0%, hsla(175, 93%, 46%, 0) 70%),
+	-webkit-linear-gradient(315deg, hsla(19, 100%, 42%, 1) 10%, hsla(19, 100%, 42%, 0) 80%),
+	-webkit-linear-gradient(225deg, hsla(205, 94%, 47%, 1) 10%, hsla(205, 94%, 47%, 0) 80%),
+	-webkit-linear-gradient(135deg, hsla(233, 98%, 41%, 1) 100%, hsla(233, 98%, 41%, 0) 70%);
+background:
+	linear-gradient(45deg, hsla(175, 93%, 46%, 1) 0%, hsla(175, 93%, 46%, 0) 70%),
+	linear-gradient(135deg, hsla(19, 100%, 42%, 1) 10%, hsla(19, 100%, 42%, 0) 80%),
+	linear-gradient(225deg, hsla(205, 94%, 47%, 1) 10%, hsla(205, 94%, 47%, 0) 80%),
+	linear-gradient(315deg, hsla(233, 98%, 41%, 1) 100%, hsla(233, 98%, 41%, 0) 70%);
+}
+
+@mixin g2 {
+	background:
+		-webkit-linear-gradient(45deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 0) 70%),
+		-webkit-linear-gradient(315deg, hsla(2, 95%, 0%, 1) 10%, hsla(2, 95%, 0%, 0) 80%),
+		-webkit-linear-gradient(225deg, hsla(140, 90%, 0%, 1) 10%, hsla(140, 90%, 0%, 0) 80%),
+		-webkit-linear-gradient(135deg, hsla(35, 0%, 62%, 1) 100%, hsla(35, 0%, 62%, 0) 70%);
+	background:
+		linear-gradient(45deg, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 0) 70%),
+		linear-gradient(135deg, hsla(2, 95%, 0%, 1) 10%, hsla(2, 95%, 0%, 0) 80%),
+		linear-gradient(225deg, hsla(140, 90%, 0%, 1) 10%, hsla(140, 90%, 0%, 0) 80%),
+		linear-gradient(315deg, hsla(35, 0%, 62%, 1) 100%, hsla(35, 0%, 62%, 0) 70%);
+	
+
+}
+
+@mixin g3 {
+  background:
+  -webkit-linear-gradient(45deg, hsla(167, 58%, 17%, 1) 0%, hsla(167, 58%, 17%, 0) 70%),
+  -webkit-linear-gradient(315deg, hsla(281, 97%, 50%, 1) 10%, hsla(281, 97%, 50%, 0) 80%),
+  -webkit-linear-gradient(225deg, hsla(212, 95%, 26%, 1) 10%, hsla(212, 95%, 26%, 0) 80%),
+  -webkit-linear-gradient(135deg, hsla(194, 50%, 42%, 1) 100%, hsla(194, 50%, 42%, 0) 70%);
+background:
+  linear-gradient(45deg, hsla(167, 58%, 17%, 1) 0%, hsla(167, 58%, 17%, 0) 70%),
+  linear-gradient(135deg, hsla(281, 97%, 50%, 1) 10%, hsla(281, 97%, 50%, 0) 80%),
+  linear-gradient(225deg, hsla(212, 95%, 26%, 1) 10%, hsla(212, 95%, 26%, 0) 80%),
+  linear-gradient(315deg, hsla(194, 50%, 42%, 1) 100%, hsla(194, 50%, 42%, 0) 70%);
+}
+
+@mixin g4 {
+  background:
+  -webkit-linear-gradient(45deg, hsla(314, 93%, 45%, 1) 0%, hsla(314, 93%, 45%, 0) 70%),
+  -webkit-linear-gradient(315deg, hsla(42, 91%, 45%, 1) 10%, hsla(42, 91%, 45%, 0) 80%),
+  -webkit-linear-gradient(225deg, hsla(207, 96%, 43%, 1) 10%, hsla(207, 96%, 43%, 0) 80%),
+  -webkit-linear-gradient(135deg, hsla(55, 96%, 44%, 1) 100%, hsla(55, 96%, 44%, 0) 70%);
+background:
+  linear-gradient(45deg, hsla(314, 93%, 45%, 1) 0%, hsla(314, 93%, 45%, 0) 70%),
+  linear-gradient(135deg, hsla(42, 91%, 45%, 1) 10%, hsla(42, 91%, 45%, 0) 80%),
+  linear-gradient(225deg, hsla(207, 96%, 43%, 1) 10%, hsla(207, 96%, 43%, 0) 80%),
+  linear-gradient(315deg, hsla(55, 96%, 44%, 1) 100%, hsla(55, 96%, 44%, 0) 70%);
+}
+
+@mixin g5 {
+  background:
+  -webkit-linear-gradient(45deg, hsla(181, 91%, 49%, 1) 0%, hsla(181, 91%, 49%, 0) 70%),
+  -webkit-linear-gradient(315deg, hsla(6, 91%, 45%, 1) 10%, hsla(6, 91%, 45%, 0) 80%),
+  -webkit-linear-gradient(225deg, hsla(25, 98%, 43%, 1) 10%, hsla(25, 98%, 43%, 0) 80%),
+  -webkit-linear-gradient(135deg, hsla(255, 93%, 48%, 1) 100%, hsla(255, 93%, 48%, 0) 70%);
+background:
+  linear-gradient(45deg, hsla(181, 91%, 49%, 1) 0%, hsla(181, 91%, 49%, 0) 70%),
+  linear-gradient(135deg, hsla(6, 91%, 45%, 1) 10%, hsla(6, 91%, 45%, 0) 80%),
+  linear-gradient(225deg, hsla(25, 98%, 43%, 1) 10%, hsla(25, 98%, 43%, 0) 80%),
+  linear-gradient(315deg, hsla(255, 93%, 48%, 1) 100%, hsla(255, 93%, 48%, 0) 70%);
+}
