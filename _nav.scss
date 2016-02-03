@@ -219,7 +219,6 @@ $menuBackground: rgba(0, 0, 0, .5);
     height: 50px;
     margin: auto;
     position: relative;
-    padding-top: 10px;
     cursor: pointer;
   }
 }
@@ -244,13 +243,16 @@ $menuBackground: rgba(0, 0, 0, .5);
   .toggleMenu{
     display: block;
     overflow: visible;
+
+    svg {
+      margin-top: 10px;
+    }
   }
   #slideMenu {
     display: block;
   }
 
   #overLogo {
-    margin-top: 10px;
     @include animate(0.1);
     path.st1, .st2, .st3, .st4, .st0 {
       @include translateRotate(0px, 0px, 0);
