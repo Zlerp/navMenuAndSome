@@ -1,4 +1,28 @@
+
+
+.aboutMe{
+  background-color: white;
+  color: black;
+}
+
+
 .myWork {
   background-color: $color2;
   color: white;
+}
+
+.contactMe {
+  background-color: white;
+  color: black;
+}
+
+
+.titleContainer{
+  margin: 0 auto;
+  height: 100px;
+  width: 300px;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 50px;
+  @include tShadow;
 }
